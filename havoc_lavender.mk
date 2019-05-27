@@ -23,11 +23,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
 # Inherit some common AEX stuff.
-$(call inherit-product, vendor/aosp/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_USE_JELLY := true
+TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 1920
+$(call inherit-product, vendor/havoc/config/common.mk)
 
-PRODUCT_NAME := aosp_lavender
+PRODUCT_NAME := havoc_lavender
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := lavender
 PRODUCT_MANUFACTURER := Xiaomi
