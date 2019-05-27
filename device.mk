@@ -469,5 +469,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     XiaomiPartss
 
+# 补丁版黑域
+PRODUCT_PACKAGES += \
+    Brevent
+
 # Inherit vendor
 $(call inherit-product, vendor/xiaomi/lavender/lavender-vendor.mk)
